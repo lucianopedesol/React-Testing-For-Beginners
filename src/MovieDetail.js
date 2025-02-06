@@ -1,4 +1,3 @@
-/* eslint react/no-did-mount-set-state: 0 */
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Overdrive from 'react-overdrive';
@@ -34,9 +33,15 @@ class MovieDetail extends Component {
             <Poster src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title} />
           </Overdrive>
           <div>
-            <h1>{movie.title}</h1>
-            <h3>{movie.release_date}</h3>
-            <p>{movie.overview}</p>
+            <h1>
+              {movie.title}
+            </h1>
+            <h3>
+              {movie.release_date}
+            </h3>
+            <p>
+              {movie.overview}
+            </p>
           </div>
         </MovieInfo>
       </MovieWrapper>
